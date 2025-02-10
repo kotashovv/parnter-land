@@ -1,0 +1,29 @@
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip101_530">
+			<rect id="solar:like-bold" rx="0.000000" width="18.000000" height="18.000000" transform="translate(6.500000 6.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip101_528">
+			<rect id="icn_m" rx="0.000000" width="31.000004" height="31.000004" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="10.844971" y1="15.499754" x2="22.624552" y2="15.499754" id="paint_linear_101_531_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#009BFB"/>
+			<stop offset="1.000000" stop-color="#1D3FA0"/>
+		</linearGradient>
+		<linearGradient x1="7.781189" y1="18.764814" x2="9.739773" y2="18.764814" id="paint_linear_101_532_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#009BFB"/>
+			<stop offset="1.000000" stop-color="#1D3FA0"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip101_528)">
+		<circle id="Ellipse 141" cx="16.000000" cy="16.000000" r="16.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect id="solar:like-bold" rx="0.000000" width="18.000000" height="18.000000" transform="translate(6.500000 6.500000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip101_530)">
+			<path id="Vector" d="M22.04 18.87L22.6 15.64C22.63 15.45 22.62 15.26 22.57 15.07C22.52 14.89 22.43 14.71 22.31 14.57C22.19 14.42 22.03 14.3 21.86 14.22C21.68 14.14 21.49 14.1 21.3 14.1L17.2 14.1C17.1 14.1 17.01 14.08 16.92 14.04C16.84 14 16.76 13.94 16.7 13.86C16.64 13.79 16.59 13.71 16.56 13.61C16.54 13.52 16.53 13.42 16.55 13.33L17.07 10.13C17.16 9.61 17.13 9.08 17 8.57C16.95 8.36 16.84 8.16 16.69 8.01C16.54 7.85 16.35 7.73 16.14 7.67L16.02 7.63C15.76 7.55 15.48 7.56 15.24 7.68C14.97 7.81 14.77 8.05 14.7 8.33L14.32 9.78C14.2 10.24 14.03 10.69 13.8 11.11C13.47 11.73 12.97 12.22 12.44 12.67L11.3 13.66C11.14 13.79 11.02 13.97 10.94 14.16C10.86 14.35 10.83 14.56 10.84 14.77L11.49 22.21C11.52 22.53 11.67 22.84 11.91 23.06C12.15 23.29 12.47 23.41 12.8 23.41L16.48 23.41C19.24 23.41 21.59 21.49 22.04 18.87Z" fill="url(#paint_linear_101_531_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M8.34 13.5C8.5 13.5 8.65 13.55 8.76 13.65C8.88 13.75 8.95 13.89 8.96 14.05L9.73 22.94C9.74 23.07 9.73 23.21 9.69 23.33C9.65 23.46 9.58 23.58 9.5 23.68C9.41 23.78 9.3 23.86 9.18 23.92C9.06 23.98 8.93 24.01 8.8 24.02C8.66 24.02 8.53 24 8.41 23.95C8.28 23.91 8.17 23.83 8.07 23.74C7.98 23.65 7.9 23.54 7.85 23.41C7.8 23.29 7.77 23.16 7.78 23.03L7.78 14.1C7.78 13.94 7.84 13.8 7.94 13.69C8.05 13.58 8.19 13.51 8.34 13.5Z" fill="url(#paint_linear_101_532_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</g>
+	</g>
+</svg>

@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Museo";
     src:
-        url("../assets/fonts/MuseoSansCyrl500.woff") format("woff"),
-        url("../assets/fonts/MuseoSansCyrl500.ttf") format("truetype");
+        url("../../assets/fonts/MuseoSansCyrl500.woff") format("woff"),
+        url("../../assets/fonts/MuseoSansCyrl500.ttf") format("truetype");
     font-style: normal;
     font-weight: 500;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: "Muller";
     src:
-        url("../assets/fonts/MullerHeavy.woff") format("woff"),
-        url("../assets/fonts/MullerHeavy.ttf") format("truetype");
+        url("../../assets/fonts/MullerHeavy.woff") format("woff"),
+        url("../../assets/fonts/MullerHeavy.ttf") format("truetype");
     font-style: normal;
     font-weight: 900;
 }
@@ -19,16 +19,16 @@
 @font-face {
     font-family: "Muller";
     src:
-        url("../assets/fonts/MullerRegular.woff") format("woff"),
-        url("../assets/fonts/MullerRegular.ttf") format("truetype");
+        url("../../assets/fonts/MullerRegular.woff") format("woff"),
+        url("../../assets/fonts/MullerRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
 }
 
 $font1: "Muller",
-sans-serif;
+    sans-serif;
 $font2: 'Museo',
-sans-serif;
+    sans-serif;
 
 body {
     font-family: $font1;
@@ -36,7 +36,7 @@ body {
 
 .container {
     display: block;
-    max-width: 1770px;
+    max-width: calc(1640px + 30px);
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 30px;
@@ -55,4 +55,69 @@ body {
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
+    transition: .5s ease;
+    &:hover {
+        background: rgba(21, 21, 21, 0.7);
+
+    }
+    &.blue-btn {
+        background: linear-gradient(90.00deg, rgb(0, 155, 251), rgb(29, 63, 160) 100%);
+        border: none;
+        &:hover {
+            filter: brightness(.9);
+        }
+    }
+    &.its-phone {
+        border-radius: 57px;
+        background: linear-gradient(90.00deg, rgb(0, 155, 251), rgb(29, 63, 160) 100%);
+        border: none;
+        padding-right: 64px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: calc(50% - 16px);
+            width: 32px;
+            height: 32px;
+            background-image: url(/assets/imgs/icons/btn-arrow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: .35s ease;
+        }
+        &.custom {
+            &::before {
+                background-image: url(/assets/imgs/icons/class.svg);
+            }
+        }
+        &:hover {
+            &::before {
+                right: 12px;
+            }
+        }
+    }
+
+    @media(max-width:1440px) {
+        font-size: 18px;
+    }
+    @media(max-width:560px) {
+        font-size: 16px;
+    }
+}
+
+.section-title {
+    >* {
+        font-family: $font1;
+        font-size: 48px;
+        font-weight: 500;
+        color: #000;
+        text-align: center;
+        display: block;
+        @media(max-width:1200px) {
+            font-size: 36px;
+        }
+        @media(max-width:768px) {
+            font-size: 32px;
+        }
+    }
 }

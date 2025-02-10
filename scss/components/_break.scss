@@ -1,0 +1,229 @@
+.break {
+    padding: 40px 0;
+    box-sizing: border-box;
+    // .break__body
+    background-image: url(../../assets/imgs/breakbg.png);
+    background-position: center 30%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20vw;
+        max-width: 380px;
+        height: 260px;
+        z-index: 2;
+        background-image: url(../../assets/imgs/decor3-1.png);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &__body {
+        border-radius: 10px;
+        box-shadow: 0px 0px 36.36px 0px rgba(20, 21, 21, 0.5);
+        backdrop-filter: blur(48.48px);
+        background: rgba(0, 0, 0, 0.6);
+        padding: 48px 60px;
+        box-sizing: border-box;
+        color: #fff;
+        position: relative;
+        .break-decor {
+            &::before {
+                content: '';
+                position: absolute;
+                left: 40px;
+                top: 40px;
+                width: 34px;
+                height: 34px;
+                background-image: url(/assets/imgs/breakdecor2.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 40px;
+                bottom: 40px;
+                width: 34px;
+                height: 34px;
+                background-image: url(/assets/imgs/breakdecor2.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(270deg);
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 8%;
+            top: calc(50% - 125px);
+            width: 250px;
+            height: 268px;
+            background-image: url(../../assets/imgs/breakdecor.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    // .break__text
+
+    &__text {
+        width: 70%;
+        margin-left: auto;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 34px;
+            height: 34px;
+            background-image: url(/assets/imgs/breakdecor2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: rotate(180deg);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 34px;
+            height: 34px;
+            background-image: url(/assets/imgs/breakdecor2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: rotate(90deg);
+        }
+        h2 {
+            font-family: $font2;
+            margin: 0;
+            font-size: 96px;
+            line-height: 1;
+            letter-spacing: 0;
+            box-sizing: border-box;
+            max-width: 800px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: $font1;
+            max-width: 900px;
+            font-weight: 400;
+            display: block;
+            margin: 0;
+            font-size: 40px;
+            line-height: 1;
+            color: rgb(209, 209, 209);
+        }
+    }
+}
+
+@media(max-width:1440px) {
+    .break {
+        &__body {
+            &::before {
+                width: 20%;
+                height: 240px;
+                background-size: 100%;
+            }
+        }
+        &__text {
+            h2 {
+                font-size: 72px;
+            }
+            p {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .break {
+        &__body {
+            &::before {
+                height: 160px;
+                top: 30px;
+            }
+            padding: 20px 40px;
+            .break-decor {
+                &::before {
+                    left: 20px;
+                    top: 20px;
+                }
+                &::after {
+                    left: 20px;
+                    bottom: 20px;
+                }
+            }
+        }
+        &__text {
+            h2 {
+                font-size: 48px;
+            }
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) { 
+    .break {
+        background-size: cover;
+        padding: 40px 20px;
+        &::before {
+            right: 20px;
+            top: 40px;
+            width: 240px;
+            
+        }
+        .container {
+            padding: 0;
+        }
+        &__body {
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 170px;
+            padding-bottom: 280px;
+            &::before {
+                width: 200px;
+                height: 217px;
+                bottom: 20px;
+                left: calc(50% - 100px);
+                top: auto;
+            }
+        }
+        &__text {
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            position: initial;
+            &::before {
+                right: 20px;
+                top: 20px;
+            }
+            &::after {
+                right: 20px;
+                bottom: 20px;
+            }
+            h2 {
+                font-size: 34px;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}

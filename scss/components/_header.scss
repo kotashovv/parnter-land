@@ -13,10 +13,15 @@
     background: rgba(24, 24, 24, 0.4);
     max-height: 116px;
     height: 100%;
+
     &__body {
         display: flex;
         padding: 24px 0;
         box-sizing: border-box;
+    }
+
+    &__mobile-btn {
+        display: none;
     }
 
     // .header__title
@@ -30,6 +35,7 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
+
         ul {
             position: relative;
             display: flex;
@@ -37,34 +43,40 @@
             padding: 0;
             margin: 0;
             list-style: none;
+
             ul {
                 visibility: hidden;
                 opacity: 0;
                 position: absolute;
             }
+
             li {
                 margin-right: 30px;
                 position: relative;
+
                 &.with-sublist {
                     padding-right: 20px;
                     box-sizing: border-box;
+
                     &::before {
                         content: '';
                         position: absolute;
                         right: 0;
                         top: calc(50% - 4px);
-                        border: 6px solid transparent; border-top: 7px solid #fff;
+                        border: 6px solid transparent;
+                        border-top: 7px solid #fff;
                     }
                 }
-                &::before {
 
-                }
+                &::before {}
+
                 a {
                     text-decoration: none;
                     color: #fff;
                     letter-spacing: 1.5px;
                     // text-transform: uppercase;
                 }
+
                 &:last-child {
                     margin-right: 0;
                 }
@@ -73,8 +85,43 @@
     }
 }
 
-.container {}
+@media(max-width:768px) {
+    .header {
+        height: auto;
+        max-height: none;
+        &__body {
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+        }
 
-.with-sublist {}
+        &__title {
+            margin-right: auto;
+            margin-left: auto;
+            transform: translateX(25%);
+        }
 
-.sublist {}
+        &__nav {
+            display: none;
+        }
+
+        &__mobile-btn {
+            display: flex;
+            align-items: center;
+
+            .burger-btn {
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                border: none;
+                background: rgba(53, 53, 53, 0.5);
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+}

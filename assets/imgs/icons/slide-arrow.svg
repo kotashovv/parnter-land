@@ -1,0 +1,24 @@
+<svg width="68.000000" height="68.000000" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip101_2048">
+			<rect id="fluent:ios-arrow-24-filled" rx="0.000000" width="27.376623" height="27.376623" transform="translate(20.311676 20.311676)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="68.000000" y1="102.000000" x2="136.000000" y2="102.000000" id="paint_linear_101_2047_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#009BFB"/>
+			<stop offset="1.000000" stop-color="#1D3FA0"/>
+		</linearGradient>
+		<linearGradient x1="28.000000" y1="33.781799" x2="40.375149" y2="33.781799" id="paint_linear_101_2049_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#009BFB"/>
+			<stop offset="1.000000" stop-color="#1D3FA0"/>
+		</linearGradient>
+	</defs>
+	<rect id="Frame 101" rx="33.000000" width="66.000000" height="66.000000" transform="translate(69.000000 69.000000) rotate(180.000000)" fill="#FFFFFF" fill-opacity="0.700000"/>
+	<rect id="fluent:ios-arrow-24-filled" rx="0.000000" width="27.376623" height="27.376623" transform="translate(20.311676 20.311676)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip101_2048)">
+		<path id="Vector" d="M40.04 23.98C40.14 23.87 40.23 23.74 40.28 23.59C40.34 23.45 40.36 23.29 40.36 23.14C40.35 22.98 40.32 22.83 40.26 22.69C40.19 22.55 40.1 22.42 39.99 22.32C39.88 22.21 39.75 22.13 39.6 22.07C39.46 22.02 39.3 21.99 39.15 22C38.99 22 38.84 22.03 38.7 22.1C38.56 22.16 38.43 22.25 38.33 22.36L28.32 32.96C28.11 33.18 28 33.47 28 33.77C28 34.07 28.11 34.36 28.32 34.58L38.33 45.18C38.43 45.29 38.56 45.39 38.7 45.45C38.84 45.52 39 45.55 39.15 45.56C39.31 45.56 39.46 45.54 39.61 45.48C39.75 45.43 39.89 45.34 40 45.24C40.11 45.13 40.21 45 40.27 44.86C40.33 44.72 40.37 44.56 40.37 44.41C40.37 44.25 40.35 44.1 40.29 43.95C40.23 43.81 40.15 43.67 40.04 43.56L30.79 33.77L40.04 23.98Z" fill="url(#paint_linear_101_2049_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<rect id="Frame 101" rx="33.000000" width="66.000000" height="66.000000" transform="translate(69.000000 69.000000) rotate(180.000000)" stroke="url(#paint_linear_101_2047_0)" stroke-opacity="1.000000" stroke-width="2.000000"/>
+</svg>
