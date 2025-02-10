@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Museo";
+    src:
+        url("../assets/fonts/MuseoSansCyrl500.woff") format("woff"),
+        url("../assets/fonts/MuseoSansCyrl500.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Muller";
+    src:
+        url("../assets/fonts/MullerHeavy.woff") format("woff"),
+        url("../assets/fonts/MullerHeavy.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Muller";
+    src:
+        url("../assets/fonts/MullerRegular.woff") format("woff"),
+        url("../assets/fonts/MullerRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+$font1: "Muller",
+sans-serif;
+$font2: 'Museo',
+sans-serif;
+
+body {
+    font-family: $font1;
+}
+
+.container {
+    display: block;
+    max-width: 1770px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+.main-btn {
+    box-sizing: border-box;
+    display: block;
+    width: fit-content;
+    padding: 16px 32px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 57px;
+    background: rgba(21, 21, 21, 0.5);
+    color: #fff;
+    font-family: $font1;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
