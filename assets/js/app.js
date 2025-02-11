@@ -1,20 +1,30 @@
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
 
     const mobileMenuBtn = document.querySelector('.burger-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     const closeMenuBtn = document.querySelector('.close-mobile');
 
     if (mobileMenuBtn && closeMenuBtn) {
-        mobileMenuBtn.addEventListener('click', ()=>{
+        mobileMenuBtn.addEventListener('click', () => {
             OpenMenu();
         })
 
-        closeMenuBtn.addEventListener('click', ()=>{
+        closeMenuBtn.addEventListener('click', () => {
             CloseMenu();
         })
+
+
+        const mobileNavLink = document.querySelectorAll('.mobile__nav a');
+
+        mobileNavLink.forEach(item=>{
+            item.addEventListener('click', ()=>{
+                CloseMenu();
+            })
+        })
+        
     }
 
-    function OpenMenu() {   
+    function OpenMenu() {
         document.body.style.overflow = 'hidden';
         mobileMenu.classList.add('active');
 
@@ -41,7 +51,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 slidesPerView: 2,
                 spaceBetween: 20,
             }
-            
+
         }
     })
 
@@ -54,10 +64,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         breakpoints: {
             1: {
                 slidesPerView: 1,
-            }, 
+            },
             560: {
                 slidesPerView: 3,
-            }, 
+            },
             769: {
                 slidesPerView: 2,
             },
@@ -80,7 +90,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 slidesPerView: 2,
                 spaceBetween: 30,
             }
-            
+
         }
     })
 
@@ -100,15 +110,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
             0: {
                 slidesPerView: 1,
                 spaceBetween: 15
-            }, 
+            },
             560: {
                 slidesPerView: 1.5,
                 spaceBetween: 15
-            }, 
+            },
             920: {
                 slidesPerView: 2,
                 spaceBetween: 20
-            }, 
+            },
 
         }
     })
@@ -117,8 +127,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const faqBtns = document.querySelectorAll('.faq__item-button');
 
     if (faqBtns.length != 0) {
-        faqBtns.forEach(item=>{
-            item.addEventListener('click', (e)=>{
+        faqBtns.forEach(item => {
+            item.addEventListener('click', (e) => {
                 if (e.target.classList.contains('active')) {
                     CloseFaq();
                 } else {
@@ -129,11 +139,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
 
         function CloseFaq() {
-            faqBtns.forEach(item=>{
+            faqBtns.forEach(item => {
                 item.classList.remove('active');
             })
             const faqTexts = document.querySelectorAll('.faq__text');
-            faqTexts.forEach(item=>{
+            faqTexts.forEach(item => {
                 item.classList.remove('active');
             })
         }
@@ -151,7 +161,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             event.preventDefault();
             const targetId = element.getAttribute("data-goto");
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 window.scrollTo({
                     top: targetElement.offsetTop,
@@ -160,4 +170,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             }
         });
     });
+
+
+
 })
