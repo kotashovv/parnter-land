@@ -130,7 +130,7 @@
 }
 @media(max-width:920px) {
     .steps {
-        &__tilte{ 
+        &__title{ 
             margin-bottom: 60px;
         }
         &__items {
@@ -167,7 +167,8 @@
 }
 @media(max-width:768px) {
     .steps {
-        &__tilte{ 
+        &__title{ 
+            margin-bottom: 60px;
         }
         &__items {
             margin: 0 -15px;
