@@ -1,0 +1,79 @@
+.faq {
+    padding: 60px 0;
+    box-sizing: border-box;
+    // .faq__title
+
+    &__title {
+        max-width: 920px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    // .faq__items
+
+    &__items {
+    }
+
+    // .faq__item
+
+    &__item {
+        border-bottom: 1px solid rgb(221, 221, 221);
+    }
+
+    // .faq__item-button
+
+    &__item-button {
+        padding: 35px 0;
+        padding-right: 50px;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        font-size: 18px;
+        font-family: $font1;
+        line-height: 1.1;
+        color: rgb(52, 52, 63);
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        transition: .5s ease;
+        &::before {
+            content: '';
+            position: absolute;
+            pointer-events: none;
+            top: calc(50% - 18px);
+            right: 0;
+            width: 37px;
+            height: 37px;
+            background-image: url(../../assets/imgs/accord-btn.png);
+            transition: .5s ease;
+        }
+        &.active {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    // .faq__text
+
+    &__text {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: .5s ease;
+        &.active {
+            opacity: 1;
+            max-height: max-content;
+            margin-bottom: 30px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+.container {
+}
+.section-title {
+}

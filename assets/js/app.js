@@ -1,4 +1,30 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+
+    const mobileMenuBtn = document.querySelector('.burger-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeMenuBtn = document.querySelector('.close-mobile');
+
+    if (mobileMenuBtn && closeMenuBtn) {
+        mobileMenuBtn.addEventListener('click', ()=>{
+            OpenMenu();
+        })
+
+        closeMenuBtn.addEventListener('click', ()=>{
+            CloseMenu();
+        })
+    }
+
+    function OpenMenu() {   
+        document.body.style.overflow = 'hidden';
+        mobileMenu.classList.add('active');
+
+    }
+
+    function CloseMenu() {
+        document.body.style.overflow = 'auto';
+        mobileMenu.classList.remove('active');
+    }
+
     const homesSlider = new Swiper('.homes__slider', {
         slidesPerView: 2,
         spaceBetween: 20,
@@ -38,6 +64,26 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     })
 
+    const reviewsSlider = new Swiper('.reviews__slider', {
+        slidesPerView: 2,
+        spaceBetween: 40,
+        navigation: {
+            prevEl: '.reviews__navigation .prev-el',
+            nextEl: '.reviews__navigation .next-el'
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            920: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            }
+            
+        }
+    })
+
     const gallerySlider = new Swiper('.gallery__slider', {
         slidesPerView: 2,
         spaceBetween: 20,
@@ -66,4 +112,52 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         }
     })
+
+
+    const faqBtns = document.querySelectorAll('.faq__item-button');
+
+    if (faqBtns.length != 0) {
+        faqBtns.forEach(item=>{
+            item.addEventListener('click', (e)=>{
+                if (e.target.classList.contains('active')) {
+                    CloseFaq();
+                } else {
+                    CloseFaq();
+                    OpenFaq(e.target);
+                }
+            })
+        })
+
+        function CloseFaq() {
+            faqBtns.forEach(item=>{
+                item.classList.remove('active');
+            })
+            const faqTexts = document.querySelectorAll('.faq__text');
+            faqTexts.forEach(item=>{
+                item.classList.remove('active');
+            })
+        }
+
+        function OpenFaq(item) {
+            item.classList.add('active');
+            const currentText = item.nextElementSibling;
+            currentText.classList.add('active');
+        }
+    }
+
+
+    document.querySelectorAll("[data-goto]").forEach(element => {
+        element.addEventListener("click", event => {
+            event.preventDefault();
+            const targetId = element.getAttribute("data-goto");
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
 })

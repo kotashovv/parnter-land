@@ -227,3 +227,13 @@
         }
     }
 }
+
+@media(max-width:420px) {
+    .break {
+        &__text {
+            h2 {
+                font-size: 26px;
+            }
+        }
+    }
+}

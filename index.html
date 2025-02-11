@@ -24,23 +24,38 @@
               <ul>
                 <li class="with-sublist">
                   <a href="#">О компании</a>
+                </li>
+                <li>
+                  <a href="#">Услуги</a>
                   <ul class="sublist">
                     <li>
-                      <a href="#">Ссылка</a>
+                      <a href="#">Ссылка 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Ссылка 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Ссылка 3</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#">Услуги</a>
+                  <a href="#">Каталог проектов</a>
                 </li>
                 <li>
-                  <a href="#">Услуги</a>
+                  <a href="#">Сотрудничество</a>
                 </li>
                 <li>
-                  <a href="#">Услуги</a>
+                  <a href="#">Работа с госпрограммами</a>
                 </li>
                 <li>
-                  <a href="#">Услуги</a>
+                  <a href="#">Акции</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -53,6 +68,56 @@
         </div>
       </div>
     </header>
+
+    <div class="mobile-menu">
+      <button class="close-mobile">
+
+      </button>
+      <div class="mobile__title">
+        <a href="#">
+          <img src="assets/imgs/icons/title.png" alt="">
+        </a>
+      </div>
+      <nav class="mobile__nav">
+        <ul>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li class="with-sublist">
+            <a href="#">Услуги</a>
+            <ul class="sublist">
+              <li>
+                <a href="#">Ссылка 1</a>
+              </li>
+              <li>
+                <a href="#">Ссылка 2</a>
+              </li>
+              <li>
+                <a href="#">Ссылка 3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Каталог проектов</a>
+          </li>
+          <li>
+            <a href="#">Сотрудничество</a>
+          </li>
+          <li>
+            <a href="#">Работа с госпрограммами</a>
+          </li>
+          <li>
+            <a href="#">Акции</a>
+          </li>
+          <li>
+            <a href="#">Цены</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <main class="main">
       <section class="hero">
         <div class="container">
@@ -68,8 +133,8 @@
               <a href="#">+7 (987) 969-05-22</a>
             </div>
             <div class="actions">
-              <button class="main-btn call-popup">Оставить заявку</button>
-              <button class="main-btn its-phone">Заказать звонок</button>
+              <button class="main-btn call-popup" data-goto="#form-id">Оставить заявку</button>
+              <button class="main-btn its-phone" data-goto="#form-id">Заказать звонок</button>
             </div>
           </div>
 
@@ -389,9 +454,9 @@
       <section class="edge">
         <div class="container">
           <div class="edge__title section-title">
-              <h2>
-                  От проектирвоания до строительства                
-              </h2>            
+            <h2>
+              От проектирвоания до строительства
+            </h2>
           </div>
           <div class="edge__items">
             <div class="edge__item">
@@ -403,7 +468,8 @@
                   Оптимальные сроки
                 </h4>
                 <p>
-                  Оптимальные сроки — это не просто обещание, а результат тщательного планирования и контроля на каждом этапе строительства.
+                  Оптимальные сроки — это не просто обещание, а результат тщательного планирования и контроля на каждом
+                  этапе строительства.
                 </p>
               </div>
             </div>
@@ -459,8 +525,10 @@
           </div>
           <div class="gallery__slider swiper">
             <div class="gallery__slider-navigation">
-              <button class="gallery__slider-nav-btn prev-el"><img src="assets/imgs/icons/slider-arrow.png" alt=""></button>
-              <button class="gallery__slider-nav-btn next-el"><img src="assets/imgs/icons/slider-arrow.png" alt=""></button>
+              <button class="gallery__slider-nav-btn prev-el"><img src="assets/imgs/icons/slider-arrow.png"
+                  alt=""></button>
+              <button class="gallery__slider-nav-btn next-el"><img src="assets/imgs/icons/slider-arrow.png"
+                  alt=""></button>
             </div>
             <div class="gallery__slider-wrapper swiper-wrapper">
               <div class="gallery__slider-slide swiper-slide">
@@ -495,7 +563,7 @@
           </div>
         </div>
       </section>
-      
+
       <section class="help">
         <div class="container">
           <div class="help__body">
@@ -517,13 +585,13 @@
 
               <div class="help__slider-title">
                 <h3>
-                  Банки партнеры 
+                  Банки партнеры
                 </h3>
               </div>
               <div class="help__slider-body">
                 <button class="help-slider-btn prev-el">
                   <img src="assets/imgs/icons/blue-btn.svg" alt="">
-                </button> 
+                </button>
                 <div class="help__slider swiper">
                   <div class="help__slider-wrapper swiper-wrapper">
                     <div class="help__slider-slide swiper-slide">
@@ -550,10 +618,10 @@
                 </div>
                 <button class="help-slider-btn prev-el">
                   <img src="assets/imgs/icons/blue-btn.svg" alt="">
-                </button> 
+                </button>
               </div>
               <div class="action">
-                <button class="main-btn its-phone custom">Бесплатная консультация</button>
+                <button class="main-btn its-phone custom" data-goto="#form-id">Бесплатная консультация</button>
               </div>
             </div>
           </div>
@@ -569,108 +637,127 @@
           </div>
           <div class="steps__items">
             <div class="steps__item">
-                <div class="num">
-                  <div class="img">
-                    <img src="assets/imgs/icons/s1.svg" alt="">
-                  </div>
-                  <span>01</span>
+              <div class="num">
+                <div class="img">
+                  <img src="assets/imgs/icons/s1.svg" alt="">
                 </div>
-                <div class="text">
-                  <span>
-                    Звонок в офис или отправка заявки
-                  </span>
-                </div>
+                <span>01</span>
+              </div>
+              <div class="text">
+                <span>
+                  Звонок в офис или отправка заявки
+                </span>
+              </div>
             </div>
             <div class="steps__item">
-                <div class="num">
-                  <div class="img">
-                    <img src="assets/imgs/icons/s2.svg" alt="">
-                  </div>
-                  <span>02</span>
+              <div class="num">
+                <div class="img">
+                  <img src="assets/imgs/icons/s2.svg" alt="">
                 </div>
-                <div class="text">
-                  <span>
-                    Встреча с архитектором (получение тех. задания)
-                  </span>
-                </div>
+                <span>02</span>
+              </div>
+              <div class="text">
+                <span>
+                  Встреча с архитектором (получение тех. задания)
+                </span>
+              </div>
             </div>
             <div class="steps__item">
-                <div class="num">
-                  <div class="img">
-                    <img src="assets/imgs/icons/s3.svg" alt="">
-                  </div>
-                  <span>03</span>
+              <div class="num">
+                <div class="img">
+                  <img src="assets/imgs/icons/s3.svg" alt="">
                 </div>
-                <div class="text">
-                  <span>
-                    Разработка архитектурного проекта
-                  </span>
-                </div>
+                <span>03</span>
+              </div>
+              <div class="text">
+                <span>
+                  Разработка архитектурного проекта
+                </span>
+              </div>
             </div>
             <div class="steps__item">
-                <div class="num">
-                  <div class="img">
-                    <img src="assets/imgs/icons/s4.svg" alt="">
-                  </div>
-                  <span>04</span>
+              <div class="num">
+                <div class="img">
+                  <img src="assets/imgs/icons/s4.svg" alt="">
                 </div>
-                <div class="text">
-                  <span>
-                    Составление сметы
-                  </span>
-                </div>
+                <span>04</span>
+              </div>
+              <div class="text">
+                <span>
+                  Составление сметы
+                </span>
+              </div>
             </div>
             <div class="steps__item">
-                <div class="num">
-                  <div class="img">
-                    <img src="assets/imgs/icons/s5.svg" alt="">
-                  </div>
-                  <span>05</span>
+              <div class="num">
+                <div class="img">
+                  <img src="assets/imgs/icons/s5.svg" alt="">
                 </div>
-                <div class="text">
-                  <span>
-                    Согласование сроков и графика работ
-                  </span>
-                </div>
+                <span>05</span>
+              </div>
+              <div class="text">
+                <span>
+                  Согласование сроков и графика работ
+                </span>
+              </div>
             </div>
             <div class="steps__item">
-                <div class="num">
-                  <div class="img">
-                    <img src="assets/imgs/icons/s6.svg" alt="">
-                  </div>
-                  <span>06</span>
+              <div class="num">
+                <div class="img">
+                  <img src="assets/imgs/icons/s6.svg" alt="">
                 </div>
-                <div class="text">
-                  <span>
-                    Сдача объекта
-                  </span>
-                </div>
+                <span>06</span>
+              </div>
+              <div class="text">
+                <span>
+                  Сдача объекта
+                </span>
+              </div>
             </div>
             <div class="steps__item">
-                <div class="num">
-                  <div class="img">
-                    <img src="assets/imgs/icons/s7.svg" alt="">
-                  </div>
-                  <span>07</span>
+              <div class="num">
+                <div class="img">
+                  <img src="assets/imgs/icons/s7.svg" alt="">
                 </div>
-                <div class="text">
-                  <span>
-                    Подписание акта выполненных работ
-                  </span>
-                </div>
+                <span>07</span>
+              </div>
+              <div class="text">
+                <span>
+                  Подписание акта выполненных работ
+                </span>
+              </div>
             </div>
             <div class="steps__item">
-                <div class="num">
-                  <div class="img">
-                    <img src="assets/imgs/icons/s8.svg" alt="">
-                  </div>
-                  <span>08</span>
+              <div class="num">
+                <div class="img">
+                  <img src="assets/imgs/icons/s8.svg" alt="">
                 </div>
-                <div class="text">
-                  <span>
-                    Строительно-монтажные работы
-                  </span>
-                </div>
+                <span>08</span>
+              </div>
+              <div class="text">
+                <span>
+                  Строительно-монтажные работы
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="videogallery">
+        <div class="container">
+          <div class="videogallery__body">
+            <div class="video">
+              <video controls src="assets/imgs/5998985_House_Home_1280x720.mp4"></video>
+            </div>
+            <div class="text">
+              <h2>
+                <span>Дом вашей мечты:</span> реальность ближе, чем вы думаете
+              </h2>
+              <p>
+                Мечтаете о собственном доме, но считаете это недостижимым? Мы разрушаем мифы о долгих сроках
+                строительства и заоблачных ценах! С нами ваш дом мечты станет реальностью быстрее, чем вы думаете.
+              </p>
             </div>
           </div>
         </div>
@@ -838,7 +925,7 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section id="form-id" class="feedback">
         <div class="container">
           <div class="feedback__body">
             <div class="feedback__title">
@@ -855,7 +942,7 @@
                   <input type="text" placeholder="Ваше имя">
                 </label>
                 <label>
-                  <input type="text" placeholder="+7 (___)___-__-__">
+                  <input type="text" placeholder="+7 (___)___-__-__" data-format="+* (***) ***-**-**" data-mask="+7 (___) ___-__-__">
                 </label>
                 <label class="checkbox-label">
                   <div class="checkbox">
@@ -869,9 +956,203 @@
                   </div>
                 </label>
                 <div class="action">
-                  <button class="main-btn its-phone">Оставить заявку</button>
+                  <button class="main-btn its-phone" >Оставить заявку</button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__slider swiper">
+            <div class="reviews__slider-wrapper swiper-wrapper">
+              <div class="reviews__slider-slide swiper-slide">
+                <div class="review__head">
+                  <div class="img">
+                    <img src="assets/imgs/r1.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="item-name">
+                      Анастасия Д.
+                    </p>
+                    <span>
+                      неделю назад
+                    </span>
+                    <img src="assets/imgs/rate.png" alt="">
+                  </div>
+
+                </div>
+                <div class="review__content">
+                  <p>
+                    Строительство велось качественно и в срок, что особенно приятно, учитывая нынешнюю ситуацию
+                    на рынке. Бригада рабочих была опытной и добросовестной, работали аккуратно и чисто. На каждом этапе
+                    строительства нас информировали о ходе работ и предоставляли фотоотчеты. Мы могли в любой момент
+                    приехать на объект и убедиться в качестве выполнения работ. Оценка — 5 из 5 звёзд.
+                  </p>
+                  <div class="img">
+                    <img src="assets/imgs/r2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slider-slide swiper-slide">
+                <div class="review__head">
+                  <div class="img">
+                    <img src="assets/imgs/r1.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="item-name">
+                      Анастасия Д.
+                    </p>
+                    <span>
+                      неделю назад
+                    </span>
+                    <img src="assets/imgs/rate.png" alt="">
+                  </div>
+
+                </div>
+                <div class="review__content">
+                  <p>
+                    Строительство велось качественно и в срок, что особенно приятно, учитывая нынешнюю ситуацию
+                    на рынке. Бригада рабочих была опытной и добросовестной, работали аккуратно и чисто. На каждом этапе
+                    строительства нас информировали о ходе работ и предоставляли фотоотчеты. Мы могли в любой момент
+                    приехать на объект и убедиться в качестве выполнения работ. Оценка — 5 из 5 звёзд.
+                  </p>
+                  <div class="img">
+                    <img src="assets/imgs/r2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slider-slide swiper-slide">
+                <div class="review__head">
+                  <div class="img">
+                    <img src="assets/imgs/r1.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="item-name">
+                      Анастасия Д.
+                    </p>
+                    <span>
+                      неделю назад
+                    </span>
+                    <img src="assets/imgs/rate.png" alt="">
+                  </div>
+
+                </div>
+                <div class="review__content">
+                  <p>
+                    Строительство велось качественно и в срок, что особенно приятно, учитывая нынешнюю ситуацию
+                    на рынке. Бригада рабочих была опытной и добросовестной, работали аккуратно и чисто. На каждом этапе
+                    строительства нас информировали о ходе работ и предоставляли фотоотчеты. Мы могли в любой момент
+                    приехать на объект и убедиться в качестве выполнения работ. Оценка — 5 из 5 звёзд.
+                  </p>
+                  <div class="img">
+                    <img src="assets/imgs/r2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slider-slide swiper-slide">
+                <div class="review__head">
+                  <div class="img">
+                    <img src="assets/imgs/r1.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="item-name">
+                      Анастасия Д.
+                    </p>
+                    <span>
+                      неделю назад
+                    </span>
+                    <img src="assets/imgs/rate.png" alt="">
+                  </div>
+
+                </div>
+                <div class="review__content">
+                  <p>
+                    Строительство велось качественно и в срок, что особенно приятно, учитывая нынешнюю ситуацию
+                    на рынке. Бригада рабочих была опытной и добросовестной, работали аккуратно и чисто. На каждом этапе
+                    строительства нас информировали о ходе работ и предоставляли фотоотчеты. Мы могли в любой момент
+                    приехать на объект и убедиться в качестве выполнения работ. Оценка — 5 из 5 звёзд.
+                  </p>
+                  <div class="img">
+                    <img src="assets/imgs/r2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__navigation">
+            <button class="reviews__btn prev-el">
+              <img src="assets/imgs/icons/slider-arrow.png" alt="">
+            </button>
+            <button class="reviews__btn next-el">
+              <img src="assets/imgs/icons/slider-arrow.png" alt="">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="faq__title section-title">
+            <h2>
+              Часто задаваемые вопросы
+              о строительстве дома под ключ
+            </h2>
+          </div>
+          <div class="faq__items">
+            <div class="faq__item">
+              <button class="faq__item-button">
+                Нужен ли от меня проект дома, чтобы начать сотрудничество?
+              </button>
+              <div class="faq__text">
+                <p>
+                  Конечно, можем. Для того, чтобы рассчитать стоимость строительства вашего проекта «под ключ», нам
+                  потребуется более подробная информация. Пожалуйста, предоставьте нам:проектную документацию,
+                  местоположение объекта, требуемые материалы и отделка, срок выполнения работ, желаемые сроки
+                  строительства влияют на стоимость и организацию работ.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__item-button">
+                Нужен ли от меня проект дома, чтобы начать сотрудничество?
+              </button>
+              <div class="faq__text">
+                <p>
+                  Конечно, можем. Для того, чтобы рассчитать стоимость строительства вашего проекта «под ключ», нам
+                  потребуется более подробная информация. Пожалуйста, предоставьте нам:проектную документацию,
+                  местоположение объекта, требуемые материалы и отделка, срок выполнения работ, желаемые сроки
+                  строительства влияют на стоимость и организацию работ.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__item-button">
+                Нужен ли от меня проект дома, чтобы начать сотрудничество?
+              </button>
+              <div class="faq__text">
+                <p>
+                  Конечно, можем. Для того, чтобы рассчитать стоимость строительства вашего проекта «под ключ», нам
+                  потребуется более подробная информация. Пожалуйста, предоставьте нам:проектную документацию,
+                  местоположение объекта, требуемые материалы и отделка, срок выполнения работ, желаемые сроки
+                  строительства влияют на стоимость и организацию работ.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__item-button">
+                Нужен ли от меня проект дома, чтобы начать сотрудничество?
+              </button>
+              <div class="faq__text">
+                <p>
+                  Конечно, можем. Для того, чтобы рассчитать стоимость строительства вашего проекта «под ключ», нам
+                  потребуется более подробная информация. Пожалуйста, предоставьте нам:проектную документацию,
+                  местоположение объекта, требуемые материалы и отделка, срок выполнения работ, желаемые сроки
+                  строительства влияют на стоимость и организацию работ.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -881,6 +1162,7 @@
   </div>
   <script src="assets/libs/swiper-bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/inputmask-custom.js"></script>
 </body>
 
 </html>
