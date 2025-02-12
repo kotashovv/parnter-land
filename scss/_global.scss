@@ -80,14 +80,14 @@ body {
             top: calc(50% - 16px);
             width: 32px;
             height: 32px;
-            background-image: url(/assets/imgs/icons/btn-arrow.png);
+            background-image: url(../../assets/imgs/icons/btn-arrow.png);
             background-repeat: no-repeat;
             background-position: center;
             transition: .35s ease;
         }
         &.custom {
             &::before {
-                background-image: url(/assets/imgs/icons/class.svg);
+                background-image: url(../../assets/imgs/icons/class.svg);
             }
         }
         &:hover {
