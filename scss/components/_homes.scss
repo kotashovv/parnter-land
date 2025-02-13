@@ -167,17 +167,17 @@
         border-radius: 32px;
         box-sizing: border-box;
         color: #fff;
-
+        background-repeat: no-repeat;
+        background-size: cover;
         .title {
-            max-width: 240px;
+            max-width: 320px;
             margin-bottom: 20px;
-
             h3 {
                 margin: 0;
                 display: block;
-                font-family: $font1;
-                font-size: 36px;
-                font-weight: 500;
+                font-family: $font2;
+                font-size: 32px;
+                font-weight: 600;
                 line-height: 1.2;
                 box-sizing: border-box;
             }

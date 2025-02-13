@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 range.move('character', val.length);
                 range.select();
             } else if (elem.selectionStart) {
-                elem.focus();
+                // elem.focus();
                 elem.setSelectionRange(val.length, val.length);
             }
         }

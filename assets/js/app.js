@@ -153,6 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const currentText = item.nextElementSibling;
             currentText.classList.add('active');
         }
+
+
+        OpenFaq(faqBtns[0]);
     }
 
 
