@@ -1,0 +1,30 @@
+<svg width="70.000000" height="70.000000" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip525_755">
+			<rect id="lucide:house" rx="0.000000" width="23.000000" height="23.000000" transform="translate(23.500000 23.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip525_754">
+			<rect id="Icon" rx="34.500000" width="69.000000" height="69.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="32.000000" y1="39.500000" x2="38.000000" y2="39.500000" id="paint_linear_525_757_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#009BFB"/>
+			<stop offset="1.000000" stop-color="#1D3FA0"/>
+		</linearGradient>
+		<linearGradient x1="26.000000" y1="34.499741" x2="44.000000" y2="34.499741" id="paint_linear_525_758_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#009BFB"/>
+			<stop offset="1.000000" stop-color="#1D3FA0"/>
+		</linearGradient>
+	</defs>
+	<rect id="Icon" rx="34.500000" width="69.000000" height="69.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip525_754)">
+		<rect id="lucide:house" rx="0.000000" width="23.000000" height="23.000000" transform="translate(23.500000 23.500000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip525_755)">
+			<path id="Vector" d="M38 44L38 36C38 35.73 37.89 35.48 37.7 35.29C37.51 35.1 37.26 35 37 35L33 35C32.73 35 32.48 35.1 32.29 35.29C32.1 35.48 32 35.73 32 36L32 44" stroke="url(#paint_linear_525_757_0)" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+			<path id="Vector" d="M26.18 32.15C26.3 31.89 26.48 31.65 26.7 31.47L33.7 25.47C34.07 25.16 34.52 25 35 25C35.47 25 35.92 25.16 36.29 25.47L43.29 31.47C43.51 31.65 43.69 31.89 43.81 32.15C43.93 32.42 44 32.7 44 32.99L44 41.99C44 42.52 43.78 43.03 43.41 43.41C43.03 43.78 42.53 43.99 42 43.99L28 43.99C27.46 43.99 26.96 43.78 26.58 43.41C26.21 43.03 26 42.52 26 41.99L26 32.99C26 32.7 26.06 32.42 26.18 32.15Z" stroke="url(#paint_linear_525_758_0)" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+		</g>
+	</g>
+	<rect id="Icon" rx="34.500000" width="69.000000" height="69.000000" transform="translate(0.500000 0.500000)" stroke="#A6AFB5" stroke-opacity="1.000000" stroke-width="1.000000"/>
+</svg>
