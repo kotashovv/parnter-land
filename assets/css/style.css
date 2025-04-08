@@ -1770,6 +1770,12 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.steps__items.custom-6 .steps__item {
+  width: calc(33.33% - 120px);
+}
+.steps__items.custom-6 .steps__item:nth-child(3)::before, .steps__items.custom-6 .steps__item:nth-child(3)::after {
+  display: none;
+}
 .steps__item {
   margin: 0 60px 60px;
   width: calc(20% - 120px);

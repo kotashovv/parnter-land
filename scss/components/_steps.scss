@@ -20,6 +20,16 @@
         align-items: stretch;
         margin: 0 -60px;
         box-sizing: border-box;
+        &.custom-6 {
+            .steps__item {
+                width: calc(33.33% - 120px);
+                &:nth-child(3) {
+                    &::before, &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     // .steps__item
