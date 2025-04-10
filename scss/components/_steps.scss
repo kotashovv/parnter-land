@@ -28,6 +28,11 @@
                         display: none;
                     }
                 }
+                &:nth-child(5) {
+                    &::before, &::after {
+                        display: block;
+                    }
+                }
             }
         }
     }
